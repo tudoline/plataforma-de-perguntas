@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.3;
+    letter-spacing: 1px;
+}
+::selection{
+    background-color: transparent;
+}
+.container{
+    padding: 0 .5em;
+    background-color: beige;
+}
+.header-container{
+    margin-bottom: .5em;
+}
+.header-container h1{
+    text-align: center;
+    padding: 1em 0;
+    font-size: 1.5em;
+}
+.header-nav ul{
+    list-style: none;
+}
+.header-nav a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 0, 0, 0.1);
+    margin: .2em 0;
+    padding: .5em;
+    transition-property: color background-color;
+    transition: .5s ease-in-out;
+}
+.header-nav a:hover{
+    color: black;
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+/* => configuração  da pagina de perguntas  ...section main-section-form <= */
+
+.main-section{
+    margin: .5em 0;
+}
+.form{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    padding: .5em;
+}
+.form label{
+    padding: .5em 0;
+}
+.form input[type=text]{
+    font-size: 1em;
+    padding: .3em .2em;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: .5em;
+}
+.form input[type=text]::placeholder{
+    text-align: center;
+    text-transform: uppercase;
+}
+.form textarea[name=pergunta]{
+    background-color: beige;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    padding: .3em;
+    border-radius: .5em;
+}
+.form input[type=submit]{
+    margin: .5em 0;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.8);
+    padding: .5em;
+    outline: none;
+    border: none;
+    background-color: rgba(165, 42, 42, 0.5);
+    border-radius: .5em;
+    transition-property: background-color color;
+    transition: .5s ease-in-out;
+}
+.form input[type=submit]:hover{
+    background-color: rgba(165, 42, 42, 0.8);
+}
+.footer p{
+    text-align: center;
+}
+@media screen and (min-width: 600px) {
+    .header-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-nav a{
+        margin: 0 .3em;
+    }
+}
